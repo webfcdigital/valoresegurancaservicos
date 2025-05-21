@@ -1,122 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valor Segurança e Serviços</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background-color: #f4ede6;
-      color: #2b2b2b;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #f4ede6;
-    }
-    nav a {
-      margin-left: 2rem;
-      text-decoration: none;
-      color: #2b2b2b;
-      font-weight: 500;
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1603775020644-eb8decd79994') center/cover no-repeat;
-      height: 60vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      font-size: 2rem;
-      font-weight: bold;
-      padding: 2rem;
-    }
-    section {
-      padding: 4rem 2rem;
-    }
-    h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .services, .about {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-    .card {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .card img {
-      max-width: 100%;
-      border-radius: 4px;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.875rem;
-      background-color: #f4ede6;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="https://www.valorsegurancaeservicos.com/_files/ugd/fcac0d_f4572330a2f8491c8aab6554dc6bd7ff.png" alt="Logo" height="40">
-    <nav>
-      <a href="#servicos">Serviços</a>
-      <a href="#sobre">Quem somos</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    Liderança em Segurança Pública no Brasil
-  </section>
-
-  <section id="servicos">
-    <h2>Nossos serviços</h2>
-    <div class="services">
-      <div class="card">
-        <img src="https://www.valorsegurancaeservicos.com/_files/ugd/fcac0d_314db1f1b3c54a8fa04d2332ff6f83a7~mv2.jpg" alt="Proteção Contra Incêndios">
-        <h3>Proteção Contra Incêndios</h3>
-        <p>Equipamentos modernos e equipe especializada para garantir a segurança contra incêndios.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valor Segurança e Serviços</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              fundo: "#f5f0eb",
+              texto: "#3e2f23",
+              destaque: "#9a6b4f",
+              claro: "#e7dbd1",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-fundo text-texto font-sans">
+    <header id="top" class="fixed w-full z-50 bg-stone-100  transition-colors duration-300">
+      <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+        <div class="flex items-center space-x-3">
+          <img src="assets/images/logo.avif" alt="Logo Valor Segurança" class="h-10 w-auto" />
+          <span class="text-xl font-bold">Valor Segurança e Serviços</span>
+        </div>
+        <nav class="space-x-4 text-sm font-medium">
+          <a href="#servicos" class="hover:text-destaque">Serviços</a>
+          <a href="#sobre" class="hover:text-destaque">Sobre</a>
+          <a href="#orcamento" class="hover:text-destaque">Orçamento</a>
+          <a href="#contato" class="hover:text-destaque">Contato</a>
+        </nav>
       </div>
-      <div class="card">
-        <img src="https://www.valorsegurancaeservicos.com/_files/ugd/fcac0d_0867ea430de24e83a37bfb74d707d97f~mv2.jpg" alt="Detecção de Incêndio Inteligente">
-        <h3>Detector de Incêndio Inteligente</h3>
-        <p>Dispositivos com tecnologia avançada para prevenção de sinistros em ambientes comerciais e residenciais.</p>
+    </header>
+    
+    <section class="h-screen flex items-center justify-center bg-cover bg-center text-white text-center px-4" style="background-image: url('assets/images/hero_back.jpg');">
+      <div class="bg-black bg-opacity-50 p-10 rounded-xl">
+        <h2 class="text-4xl font-bold mb-4">Segurança Patrimonial com Excelência</h2>
+        <p class="mb-6">Mais de uma década protegendo vidas e patrimônios em São Paulo.</p>
+        <a href="#orcamento" class="bg-destaque px-6 py-2 rounded hover:bg-opacity-80 transition">Solicitar Orçamento</a>
       </div>
-      <div class="card">
-        <img src="https://www.valorsegurancaeservicos.com/_files/ugd/fcac0d_77ad9d507dc348109765ca5d770650d6~mv2.jpg" alt="Sinalização de Saída de Emergência">
-        <h3>Sinalização de Saída de Emergência</h3>
-        <p>Placas e dispositivos de sinalização adequados às normas de segurança.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+<!-- Botão WhatsApp -->
+<a href="https://wa.me/5511940122550" target="_blank" aria-label="Fale conosco no WhatsApp"
+   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 transition-all duration-300">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+    <path d="M12.004 2C6.48 2 2 6.48 2 12a9.93 9.93 0 001.653 5.514L2 22l4.609-1.518A9.943 9.943 0 0012.004 22c5.522 0 10-4.477 10-10s-4.478-10-10-10zm0 18.182a8.14 8.14 0 01-4.164-1.146l-.298-.178-2.737.902.918-2.663-.19-.308a8.16 8.16 0 01-1.23-4.29c0-4.507 3.666-8.182 8.19-8.182 4.522 0 8.19 3.675 8.19 8.182 0 4.507-3.667 8.182-8.19 8.182zm4.365-6.137c-.242-.121-1.436-.707-1.658-.786-.223-.08-.386-.121-.55.122-.164.242-.63.787-.773.95-.142.163-.285.183-.527.061-.243-.122-1.026-.376-1.953-1.2-.723-.646-1.212-1.445-1.354-1.687-.141-.244-.015-.377.106-.498.109-.108.243-.285.364-.426.122-.14.162-.243.243-.406.081-.162.04-.305-.02-.427-.06-.122-.55-1.325-.752-1.814-.198-.478-.399-.413-.55-.421l-.466-.01c-.162 0-.426.06-.649.305-.223.243-.85.829-.85 2.02s.87 2.344.99 2.505c.121.162 1.71 2.615 4.148 3.67.58.25 1.03.399 1.382.51.58.184 1.107.158 1.525.096.465-.07 1.436-.586 1.64-1.15.202-.563.202-1.046.141-1.148-.06-.1-.223-.162-.465-.283z"/>
+  </svg>
+</a>
 
-  <section id="sobre">
-    <h2>Quem somos</h2>
-    <div class="about">
-      <div class="card">
-        <img src="https://www.valorsegurancaeservicos.com/_files/ugd/fcac0d_a329f0f4a2634803a312b6ac51b2824e~mv2.jpg" alt="Empresa">
-        <p>Somos uma empresa com foco em soluções em segurança e proteção patrimonial, sempre atualizada com as melhores tecnologias do mercado.</p>
+    <section id="servicos" class="py-20 px-6 bg-white">
+      <h2 class="text-3xl font-bold text-center mb-12">Nossos Serviços</h2>
+      <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div class="shadow rounded overflow-hidden bg-fundo">
+          <img src="assets/images/vigilante.avif" alt="Vigilante" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Vigilante e Vigilante de segurança pessoal</h3>
+          </div>
+        </div>
+        <div class="shadow rounded overflow-hidden bg-fundo">
+          <img src="assets/images/porteiro.avif" alt="Porteiro" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Porteiro</h3>
+          </div>
+        </div>
+        <div class="shadow rounded overflow-hidden bg-fundo">
+          <img src="assets/images/controlador-de-acesso.avif" alt="Controle de Acesso" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Controle de Acesso</h3>
+          </div>
+        </div>
+        <div class="shadow rounded overflow-hidden bg-fundo">
+          <img src="assets/images/vigilante-de-monitoramento.avif" alt="Monitoramento" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Vigilante de monitoramento</h3>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer id="contato">
-    <p>Contato: contato@valorseguranca.com | (00) 91234-5678</p>
-    <p>© 2025 Valor Segurança e Serviços</p>
-  </footer>
-</body>
+    <section id="sobre" class="py-20 px-6 bg-claro text-center">
+      <h2 class="text-3xl font-bold mb-6">Sobre Nós</h2>
+      <p class="max-w-3xl mx-auto mb-10">A Valor Segurança e Serviços atua há mais de 10 anos com foco em soluções personalizadas de segurança, vigilância, controle de acesso e atendimento corporativo em todo o estado de São Paulo.</p>
+      <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto text-left">
+        <div class="bg-white p-6 rounded shadow">
+          <img src="assets/images/missao.avif">
+          <h3 class="text-xl font-semibold mb-2">Missão</h3>
+          <p>Dedicação e eficiência na segurança do seu patrimônio ou pessoal.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <div class="flex items-center justify-center">
+          <img src="assets/images/visao.avif" height="360">
+        </div>
+          <h3 class="text-xl font-semibold mb-2">Visão</h3>
+          <p>Ser referência nacional em soluções de segurança inteligente e humanizada.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="orcamento" class="py-20 px-6 bg-white">
+      <h2 class="text-3xl font-bold text-center mb-10">Solicite um Orçamento</h2>
+      <form class="max-w-2xl mx-auto bg-fundo p-8 rounded shadow space-y-6">
+        <input type="text" placeholder="Seu nome" required class="w-full p-3 border border-gray-300 rounded" />
+        <input type="email" placeholder="Seu email" required class="w-full p-3 border border-gray-300 rounded" />
+        <textarea placeholder="Descreva sua necessidade..." required class="w-full p-3 border border-gray-300 rounded h-32"></textarea>
+        <button type="submit" class="bg-destaque text-white px-6 py-2 rounded hover:bg-opacity-80">Enviar</button>
+      </form>
+    </section>
+
+    <footer id="contato" class="bg-[#f0ece7] border-t border-gray-300 py-12 px-6 text-sm">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
+        
+        <!-- Coluna 1: Contato -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Valor Seguranca e Servicos</h4>
+          <div class="flex items-center justify-center md:justify-start space-x-2 mb-2">
+            <svg class="w-5 h-5 text-blue-900" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22 16.92V21a1 1 0 01-1.09 1A19.91 19.91 0 013 4.09 1 1 0 014 3h4.09a1 1 0 011 .75 12.05 12.05 0 001.29 3.12 1 1 0 01-.23 1.11l-2.2 2.2a16 16 0 007.27 7.27l2.2-2.2a1 1 0 011.11-.23A12.05 12.05 0 0020.25 19a1 1 0 01.75 1z"/>
+            </svg>
+            <span>(11) 94012-2550</span>
+          </div>
+          <div class="flex items-center justify-center md:justify-start space-x-2">
+            <svg class="w-5 h-5 text-blue-900" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2.4.5l7.6 6 7.6-6H4.4zM20 6.8l-7.2 5.7a1 1 0 01-1.6 0L4 6.8V20h16V6.8z"/>
+            </svg>
+            <span>contato@valorseguranca.com</span>
+          </div>
+        </div>
+    
+        <!-- Coluna 2: Endereço -->
+        <div class="flex flex-col items-center md:items-start">
+          <div class="flex items-center space-x-2">
+            <svg class="w-5 h-5 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2a7 7 0 017 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 017-7zm0 9a2 2 0 100-4 2 2 0 000 4z"/>
+            </svg>
+            <p class="max-w-xs">Rua Pinto Goncalves, 31 - Perdizes, São Paulo -
+    
+    <script>
+      // Navbar scroll behavior
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("bg-fundo", "shadow");
+        } else {
+          header.classList.remove("bg-fundo", "shadow");
+        }
+      });
+    </script>
+  </body>
 </html>
