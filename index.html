@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valor Segurança e Serviços</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #f4ede6;
+      color: #2b2b2b;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #f4ede6;
+    }
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #2b2b2b;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1603775020644-eb8decd79994') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 2rem;
+    }
+    section {
+      padding: 4rem 2rem;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .services, .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.875rem;
+      background-color: #f4ede6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://www.valorsegurancaeservicos.com/_files/ugd/fcac0d_f4572330a2f8491c8aab6554dc6bd7ff.png" alt="Logo" height="40">
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Quem somos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    Liderança em Segurança Pública no Brasil
+  </section>
+
+  <section id="servicos">
+    <h2>Nossos serviços</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://www.valorsegurancaeservicos.com/_files/ugd/fcac0d_314db1f1b3c54a8fa04d2332ff6f83a7~mv2.jpg" alt="Proteção Contra Incêndios">
+        <h3>Proteção Contra Incêndios</h3>
+        <p>Equipamentos modernos e equipe especializada para garantir a segurança contra incêndios.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.valorsegurancaeservicos.com/_files/ugd/fcac0d_0867ea430de24e83a37bfb74d707d97f~mv2.jpg" alt="Detecção de Incêndio Inteligente">
+        <h3>Detector de Incêndio Inteligente</h3>
+        <p>Dispositivos com tecnologia avançada para prevenção de sinistros em ambientes comerciais e residenciais.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.valorsegurancaeservicos.com/_files/ugd/fcac0d_77ad9d507dc348109765ca5d770650d6~mv2.jpg" alt="Sinalização de Saída de Emergência">
+        <h3>Sinalização de Saída de Emergência</h3>
+        <p>Placas e dispositivos de sinalização adequados às normas de segurança.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Quem somos</h2>
+    <div class="about">
+      <div class="card">
+        <img src="https://www.valorsegurancaeservicos.com/_files/ugd/fcac0d_a329f0f4a2634803a312b6ac51b2824e~mv2.jpg" alt="Empresa">
+        <p>Somos uma empresa com foco em soluções em segurança e proteção patrimonial, sempre atualizada com as melhores tecnologias do mercado.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <p>Contato: contato@valorseguranca.com | (00) 91234-5678</p>
+    <p>© 2025 Valor Segurança e Serviços</p>
+  </footer>
+</body>
+</html>
